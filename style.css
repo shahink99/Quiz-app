@@ -1,0 +1,198 @@
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  direction: rtl;
+  background:url('./image/images.jpeg');
+}
+
+.quiz-container {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: none;
+  background-color: #4b4747;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#options button:hover {
+  background-color: #ddd;
+  color: #4b4747;
+}
+
+#next-btn {
+  display: none;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.timer {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #d32f2f;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); color: #b71c1c; }
+  100% { transform: scale(1); }
+}
+
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.incorrect {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+/* استایل برای انتخاب سطح */
+.level-selection {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.level-selection label {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.level-selection select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* استایل برای نمایش شماره سوال و تعداد کل سوالات */
+.question-info {
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: left;
+  color: #555;
+}
+
+/* استایل برای تایمر */
+#timer {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* استایل برای دکمه‌های گزینه‌ها */
+button {
+  padding: 12px 20px;
+  margin: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* استایل برای دکمه سوال بعد */
+#next-btn {
+  padding: 12px 20px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#next-btn:disabled {
+  background-color: #9E9E9E;
+  cursor: not-allowed;
+}
+
+/* استایل برای نتیجه */
+#result {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+#stop-btn{
+  background-color: #d32f2f;
+  color: white;
+  margin-top: 20px;
+  width: unset;
+}
+
+#again-btn{
+  margin-top: 20px;
+
+}
+
+.music-parent{
+  /* background: #a9ddac; */
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+#music-btn{
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.music-icon{
+  width: 46px;
+}
+
