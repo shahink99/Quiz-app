@@ -9,11 +9,12 @@ body {
 .quiz-container {
   width: auto;
   max-width: 500px;
-  margin: 50px auto;
+  margin: 20px auto;
   background: linear-gradient(135deg, #d4fc79, #96e6a1);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height:100vh
 }
 
 #question {
@@ -194,5 +195,6 @@ button:hover {
 .music-icon{
   width: 46px;
 }
+
 
 
